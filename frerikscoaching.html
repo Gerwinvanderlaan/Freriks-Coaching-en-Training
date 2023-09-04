@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100&family=Poppins:wght@100;200;300;400;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <title>Freriks Coaching, Training en Consulting</title>
+</head>
+
+<body>
+    <header class="header">
+        <nav>
+            <a href="index.html"><img src="logo.freriks.solo.png"></a>
+            <div class="nav-links" id="navLinks">
+                <i class="fa-solid fa-xmark" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="frerikscoaching.html">HOME</a></li>
+                    <li><a href="coaching.html">COACHING</a></li>
+                    <li><a href="">TRAINING</a></li>
+                    <li><a href="">INSPIRATIE</a></li>
+                    <li><a href="">OVER ONS</a></li>
+                </ul>
+            </div>
+            <i class="fa-solid fa-bars" onclick="showMenu()"></i>
+        </nav>
+
+        <div class="text-box">
+            <h3>Coaching en training voor jong en oud</h3>
+            <p id="landing-text">Persoonlijke coaching door gecertificeerde coaches Kirsten Freriks en Gerwin van der
+                Laan. <br>Geïnteresseerd? Kijk <a class="hier" href="coaching.html">hier</a> voor meer informatie over
+                onze
+                coachingstrajecten.</p>
+        </div>
+    </header>
+
+    <section>
+        <div class="coaches">
+            <h1 class="title-coaches">De coaches</h1>
+            <div class="row">
+                <div class="coach1">
+                    <img src="Kirsten Freriks.jpg" class="img-Kirsten" alt=""><br><br>
+                    <p class="p-cover"><strong>Kirsten Freriks</strong><br><em>"Ik heb het nog nooit gedaan, <br>dus ik
+                            denk dat ik het wel kan."</em></p>
+                </div>
+                <div class="coach2">
+                    <img src="Gerwin van der Laanv2.jpg" class="img-Gerwin" alt=""><br><br>
+                    <p class="p-cover"><strong>Gerwin van der Laan</strong><br><em>"Als ik zeg dat je de dam over moet,
+                            <br>dan zal de
+                            rest je volgen."</em></p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <article class="watwijdoen">
+        <h1>Wat wij doen</h1><br>
+        <p>Wij bieden zowel individuele coaching als groepstrainingen op gebied van mentale gezondheid en vitaal leven.
+            <br>Daarnaast bieden wij de mogelijkheid om gebruik te maken van onze kennis. <br>Meer informatie vind je
+            hieronder.
+        </p>
+
+        <div class="column-aanbod">
+            <div class="coaching">
+                <a href="coaching.html"><img class="solo" src="solo.jpg"></a>
+                <h3>COACHING</h3>
+            </div>
+            <div class="training">
+                <a href="training.html"><img class="groep" src="groep.jpg"></a>
+                <h3>TRAINING</h3>
+            </div>
+            <div class="consulting">
+                <a href="consulting.html"><img class="consult" src="consult.jpg"></a>
+                <h3>CONSULTING</h3>
+            </div>
+        </div>
+    </article>
+
+    <footer>
+        <div class="footer">
+            <br>
+            <p>Voor meer informatie check onze socials!</p><br>
+            <div class="footer-socials">
+                <i class="fa-brands fa-instagram"></i>
+                <h4>|</h4>
+                <i class="fa-brands fa-twitter"></i>
+                <h4>|</h4>
+                <i class="fa-regular fa-envelope"></i>
+            </div>
+        </div>
+
+
+
+    </footer>
+
+    <script>
+        var navLinks = document.getElementById("navLinks");
+        function showMenu() {
+            navLinks.style.right = "0";
+        }
+        function hideMenu() {
+            navLinks.style.right = "-200px";
+        }
+    </script>
+</body>
+
+</html>
